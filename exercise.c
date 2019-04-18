@@ -128,12 +128,12 @@ int main(int argc, char *argv[])
     DO_TEST(10, "hole: 10\n", NULL);
     DO_TEST(10, "data: 10\n", DATA(0, 10));
     DO_TEST(20, "hole: 10\n"
-                "data: 10\n", DATA(9, 10));
+                "data: 10\n", DATA(10, 10));
     DO_TEST(50, "data: 10\n"
                 "hole: 10\n"
                 "data: 10\n"
                 "hole: 10\n"
-                "data: 10\n", DATA(0, 50), HOLE(9, 10), HOLE(29, 10));
+                "data: 10\n", DATA(0, 50), HOLE(10, 10), HOLE(30, 10));
 
     return ret;
 }
